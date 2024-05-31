@@ -30,4 +30,4 @@ jobs:
       uses: docker/setup-buildx-action@v2
 
     - name: Build function only
-      run: faas-cli deploy -f minify.yml
+      run: faas-cli build -f minify.yml
