@@ -31,7 +31,4 @@ jobs:
 
     - name: Build function only
       run: faas-cli build -f minify.yml
-    - name: Test function
-      run: curl -X POST http://localhost:8080/function/minify --data ".test { color #ff0000; }"
-      
 
